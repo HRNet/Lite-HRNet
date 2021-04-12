@@ -1,0 +1,8 @@
+mmcv-full
+munkres
+poseval@git+https://github.com/svenkreiss/poseval.git
+scipy
+titlecase
+torch
+torchvision
+xtcocotools>=1.6
