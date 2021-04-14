@@ -2,10 +2,10 @@
 
 ## Introduction
 ```
-@inproceedings{sun2019deep,
+@inproceedings{Yulitehrnet21,
   title={Lite-HRNet: A Lightweight High-Resolution Network},
   author={Yu, Changqian and Xiao, Bin and Gao, Changxin and Yuan, Lu and Zhang, Lei and Sang, Nong and Wang, Jingdong},
-  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  booktitle={CVPR},
   year={2021}
 }
 ```
