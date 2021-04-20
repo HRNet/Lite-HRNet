@@ -232,13 +232,12 @@ Examples:
 ### Get the compulationaly complexity
 You can use the following commands to compute the complexity of one model.
 ```shell
-python tools/summary_network.py ${CONFIG_FILE} --shape ${SHAPE} [--with-head]
+python tools/summary_network.py ${CONFIG_FILE} --shape ${SHAPE}
 ```
 
 Arguments:
 
 - `SHAPE`: Input size.
-- `--with-head`: If specified, the computed complexity contains the complexity of the pose head.
 
 Examples:
 
@@ -247,7 +246,6 @@ Examples:
 ```shell
 python tools/summary_network.py configs/top_down/lite_hrnet/coco/litehrnet_18_coco_256x192.py \
     --shape 256 256 \
-    --with-head
 ```
 
 ## Acknowledgement

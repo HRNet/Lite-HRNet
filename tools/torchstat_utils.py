@@ -1,7 +1,7 @@
 # Copyright (c) Microsoft Corporation.
 # Licensed under the MIT license.
 
-from .torchstat import analyze
+from torchstat import analyze
 import pandas as pd
 import copy
 

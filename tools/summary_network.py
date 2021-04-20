@@ -3,9 +3,11 @@ import argparse
 
 from mmcv import Config
 # from mmcv.cnn import get_model_complexity_info
-from tools.torchstat_utils import model_stats
+from torchstat_utils import model_stats
 
-from mmpose.models import build_posenet
+import sys
+sys.path.append('.')
+from models import build_posenet
 
 
 def parse_args():
@@ -17,10 +19,6 @@ def parse_args():
         nargs='+',
         default=[2048, 1024],
         help='input image size')
-    parser.add_argument(
-        '--with-head',
-        action='store_true',
-        help='whether to compute the complexity of the deconv head.')
     parser.add_argument('--out-file', type=str,
                         help='Output file name') 
     args = parser.parse_args()
@@ -42,10 +40,8 @@ def main():
     model = build_posenet(cfg.model)
     model.eval()
 
-    if args.with_head and hasattr(model, 'forward_with_head'):
-        model.forward = model.forward_with_head
-    elif not args.with_head and hasattr(model, 'forward_without_head'):
-        model.forward = model.forward_without_head
+    if hasattr(model, 'forward_dummy'):
+        model.forward = model.forward_dummy
     else:
         raise NotImplementedError(
             'FLOPs counter is currently not currently supported with {}'.
