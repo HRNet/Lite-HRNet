@@ -7,15 +7,6 @@ This is an official pytorch implementation of [Lite-HRNet: A Lightweight High-Re
 
 ## Results and models
 
-<style>
-table th:first-of-type {
-    width: 10%;
-}
-table th:nth-of-type(2) {
-    width: 10%;
-}
-</style>
-
 ### Results on COCO val2017 with detector having human AP of 56.4 on COCO val2017 dataset
 
 | Arch  | Input Size | #Params | FLOPs | AP | AP<sup>50</sup> | AP<sup>75</sup> | AR | AR<sup>50</sup> | ckpt |
