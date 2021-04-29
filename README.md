@@ -11,18 +11,21 @@ This is an official pytorch implementation of [Lite-HRNet: A Lightweight High-Re
 
 | Arch  | Input Size | #Params | FLOPs | AP | AP<sup>50</sup> | AP<sup>75</sup> | AR | AR<sup>50</sup> | ckpt |
 | :----------------- | :-----------: | :------: | :-----------: | :------: |:------: | :------: | :------: | :------: | :------: |
-| [Lite-HRNet-18](/configs/top_down/lite_hrnet/coco/litehrnet_18_coco_256x192.py)  | 256x192 | 1.1M | 205.2M |0.648 | 0.867 | 0.730 | 0.712 | 0.911 | [GoogleDrive](https://drive.google.com/file/d/1_bLVpm8cVqQF6unmxOQ3ObEr4hpoLuJn/view?usp=sharing) or [OneDrive](https://1drv.ms/u/s!AvreNzlRJaHnc6CkDJVt0dOSu4k?e=xLEMRb) |
-| [Lite-HRNet-18](/configs/top_down/lite_hrnet/coco/litehrnet_18_coco_384x288.py)  | 384x288 | 1.1M | 461.6M | 0.676 | 0.878 | 0.750 | 0.737 | 0.921 | [GoogleDrive](https://drive.google.com/file/d/1djewivNYHKTeaYLL9x7b3wkxHTCtVbJc/view?usp=sharing) or [OneDrive](https://1drv.ms/u/s!AvreNzlRJaHnddnyeYxmLgSymMM?e=AIofxW) |
-| [Lite-HRNet-30](/configs/top_down/lite_hrnet/coco/litehrnet_30_coco_256x192.py)  | 256x192 | 1.8M | 319.2M | 0.672 | 0.880 | 0.750 | 0.733 | 0.922 | [GoogleDrive](https://drive.google.com/file/d/1QczOxBm6rKqDeSlq9SFCma5oqQncZ6ng/view?usp=sharing) or [OneDrive](https://1drv.ms/u/s!AvreNzlRJaHneaSASfryxo9eeGI?e=dVtbiH) |
-| [Lite-HRNet-30](/configs/top_down/lite_hrnet/coco/litehrnet_30_coco_384x288.py)  | 384x288 | 1.8M | 717.8M | 0.704 | 0.887 | 0.777 | 0.762 | 0.928 | [GoogleDrive](https://drive.google.com/file/d/1nx7AT1DMJRuiYNPcI7EqBp6yJN63ewE1/view?usp=sharing) or [OneDrive](https://1drv.ms/u/s!AvreNzlRJaHneJJYbKPmep86U3o?e=pbBP5B) |
-
+| [Naive Lite-HRNet-18](/configs/top_down/naive_litehrnet/coco/naive_litehrnet_18_coco_256x192.py)  | 256x192 | 0.7M | 194.8M | 0.628 | 0.855 | 0.699 | 0.691 | 0.901 | [GoogleDrive](https://drive.google.com/file/d/1rW1gqKtCUxpsos-eLItEHZThEF48eRjQ/view?usp=sharing) or [OneDrive](https://1drv.ms/u/s!AvreNzlRJaHnfki3iJZiE-v0dqE?e=42PlOT)|
+| [Wider Naive Lite-HRNet-18](/configs/top_down/naive_litehrnet/coco/wider_naive_litehrnet_18_coco_256x192.py)  | 256x192 | 1.3M | 311.1M | 0.660 | 0.871 | 0.737 | 0.721 | 0.913 | [GoogleDrive](https://drive.google.com/file/d/1Amb0yE677zV18KaH6gruUQnHUiwBx_-H/view?usp=sharing) or [OneDrive](https://1drv.ms/u/s!AvreNzlRJaHngQLsLGlp3r16ALfZ?e=XgMYMd) |
+| [Lite-HRNet-18](/configs/top_down/lite_hrnet/coco/litehrnet_18_coco_256x192.py)  | 256x192 | 1.1M | 205.2M |0.648 | 0.867 | 0.730 | 0.712 | 0.911 | [GoogleDrive](https://drive.google.com/file/d/1ZewlvpncTvahbqcCFb-95C3NHet30mk5/view?usp=sharing) or [OneDrive](https://1drv.ms/u/s!AvreNzlRJaHngQE0r-EVnMNPObk7?e=ojJosi) |
+| [Lite-HRNet-18](/configs/top_down/lite_hrnet/coco/litehrnet_18_coco_384x288.py)  | 384x288 | 1.1M | 461.6M | 0.676 | 0.878 | 0.750 | 0.737 | 0.921 | [GoogleDrive](https://drive.google.com/file/d/1E3S18YbUfBm7YtxYOV7I9FmrntnlFKCp/view?usp=sharing) or [OneDrive](https://1drv.ms/u/s!AvreNzlRJaHnfZE0w9s_h9oK98c?e=xPiAxS) |
+| [Lite-HRNet-30](/configs/top_down/lite_hrnet/coco/litehrnet_30_coco_256x192.py)  | 256x192 | 1.8M | 319.2M | 0.672 | 0.880 | 0.750 | 0.733 | 0.922 | [GoogleDrive](https://drive.google.com/file/d/1KLjNInzFfmZWSbEQwx-zbyaBiLB7SnEj/view?usp=sharing) or [OneDrive](https://1drv.ms/u/s!AvreNzlRJaHnexxp5RCK15meEWw?e=g4ObHb) |
+| [Lite-HRNet-30](/configs/top_down/lite_hrnet/coco/litehrnet_30_coco_384x288.py)  | 384x288 | 1.8M | 717.8M | 0.704 | 0.887 | 0.777 | 0.762 | 0.928 | [GoogleDrive](https://drive.google.com/file/d/1BcHnLka4FWiXRmPnJgJKmsSuXXqN4dgn/view?usp=sharing) or [OneDrive](https://1drv.ms/u/s!AvreNzlRJaHnfOng41YajWZg478?e=wVKeIS) |
 
 ### Results on MPII val set
 
 | Arch  | Input Size | #Params | FLOPs | Mean | Mean@0.1   | ckpt |
 | :--- | :--------: | :------: | :--------: | :------: | :------: | :------: |
-| [Lite-HRNet-18](/configs/top_down/lite_hrnet/mpii/litehrnet_18_mpii_256x256.py) | 256x256 | 1.1M | 273.4M | 0.854 | 0.295 | [GoogleDrive](https://drive.google.com/file/d/1Bw4shzVJoaaQWngkL4qnlnaPE87uiJtW/view?usp=sharing) or [OneDrive](https://1drv.ms/u/s!AvreNzlRJaHndPtOeefYphHCwpc?e=AccP58) |
-| [Lite-HRNet-30](/configs/top_down/lite_hrnet/mpii/litehrnet_30_mpii_256x256.py) | 256x256 | 1.8M | 425.3M | 0.870 | 0.313 | [GoogleDrive](https://drive.google.com/file/d/1bVOahaHY61bhAPFYYfkgkJviyV-3fLKE/view?usp=sharing) or [OneDrive](https://1drv.ms/u/s!AvreNzlRJaHnd4Zt8pBVuo-Eimo?e=6XtAvE) |
+| [Naive Lite-HRNet-18](/configs/top_down/naive_litehrnet/mpii/naive_litehrnet_18_mpii_256x256.py) | 256x256 | 0.7M | 259.6M | 0.853 | 0.305 | [GoogleDrive](https://drive.google.com/file/d/1tUdrJd_SI5HGBuYT9FxYX5XFhfcb3cD_/view?usp=sharing) or [OneDrive](https://1drv.ms/u/s!AvreNzlRJaHngQAjPfwag38olIcH?e=01kH1t) |
+| [Wider Naive Lite-HRNet-18](/configs/top_down/naive_litehrnet/mpii/wider_naive_litehrnet_18_mpii_256x256.py) | 256x256 | 1.3M | 418.7M | 0.868 | 0.311 | [GoogleDrive](https://drive.google.com/file/d/12cPeB8MZs1o6_qOS7HavGwkk6r7hUMAS/view?usp=sharing) or [OneDrive](https://1drv.ms/u/s!AvreNzlRJaHngQMqhUOcrYtjTDZ1?e=iuD9Jz) |
+| [Lite-HRNet-18](/configs/top_down/lite_hrnet/mpii/litehrnet_18_mpii_256x256.py) | 256x256 | 1.1M | 273.4M | 0.854 | 0.295 | [GoogleDrive](https://drive.google.com/file/d/1bcnn5Ic2-FiSNqYOqLd1mOfQchAz_oCf/view?usp=sharing) or [OneDrive](https://1drv.ms/u/s!AvreNzlRJaHnev2he_nA_VOLSqg?e=f9zACb) |
+| [Lite-HRNet-30](/configs/top_down/lite_hrnet/mpii/litehrnet_30_mpii_256x256.py) | 256x256 | 1.8M | 425.3M | 0.870 | 0.313 | [GoogleDrive](https://drive.google.com/file/d/1JB9LOwkuz5OUtry0IQqXammFuCrGvlEd/view?usp=sharing) or [OneDrive](https://1drv.ms/u/s!AvreNzlRJaHnf0LR6jpyGoTJZIA?e=653jEF) |
 
 
 ## Enviroment
