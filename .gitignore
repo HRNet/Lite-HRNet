@@ -1,2 +1,9 @@
 
 
+#yeongdon
+/media/yd/share/LiteHRNet/Lite-HRNet/data/coco/train2017/*.jpg
+/media/yd/share/LiteHRNet/Lite-HRNet/data/coco/val2017/*.jpg
+#jpg 
+
+*.jpg
+*.json
