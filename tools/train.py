@@ -10,11 +10,18 @@ from mmcv import Config, DictAction
 from mmcv.runner import init_dist, set_random_seed
 from mmcv.utils import get_git_hash
 
+
+import sys 
+sys.path.append('/media/yd/share/LiteHRNet/Lite-HRNet')
+
+
 from mmpose import __version__
 from mmpose.apis import train_model
 from mmpose.datasets import build_dataset
 from models import build_posenet
 from mmpose.utils import collect_env, get_root_logger
+
+
 
 
 def parse_args():

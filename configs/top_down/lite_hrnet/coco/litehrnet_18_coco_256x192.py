@@ -19,7 +19,7 @@ lr_config = dict(
     warmup_iters=500,
     warmup_ratio=0.001,
     step=[170, 200])
-total_epochs = 210
+total_epochs = 2 #210
 log_config = dict(
     interval=50,
     hooks=[dict(type='TextLoggerHook'),
@@ -132,10 +132,11 @@ train_pipeline = [
         type='Collect',
         keys=['img', 'target', 'target_weight'],
         meta_keys=[
-            'image_file', 'joints_3d', 'joints_3d_visible', 'center', 'scale',
+            'image_file', 'joints_3d', 'joints_3d_visible', 
             'rotation', 'bbox_score', 'flip_pairs'
         ]),
 ]
+# 'center', 'scale',
 
 val_pipeline = [
     dict(type='LoadImageFromFile'),
@@ -151,10 +152,11 @@ val_pipeline = [
             'img',
         ],
         meta_keys=[
-            'image_file', 'center', 'scale', 'rotation', 'bbox_score',
-            'flip_pairs'
+            'image_file',  'rotation', 'bbox_score',
+            'center', 'scale','flip_pairs'
         ]),
 ]
+# 'center', 'scale',
 test_pipeline = val_pipeline
 data_root = 'data/coco'
 data = dict(
